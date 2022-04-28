@@ -5,6 +5,9 @@ Project to train a deep learning model to write proofs for graduate level machin
 ## Full_pipeline.py
  is the most important script for our final approach, it contains all the code to read in the final curated dataset and to chain the outputs of the translation model to the proof generation model. ML_Flag is one variable to note--it signals whether we are attempting to generate proofs to solve the actual course problems, in which case we make use of the full MiniF2F dataset as our support set (rather than splitting it internally into query and support sets). This means we have to handle a few things differently, so the flag variable crops up a few times.
 
+ ## datasets (within src)
+ This dataset contains our pre-processed and curated problems from the MiniF2F dataset, as well as the Machine Learning course 4771 at Columbia. We didn't include the full dataset, nor the NaturalProofsWiki dataset-- please note that these datasets are available publicly online.
+
 ### Regular_expression_for_dataset_merging_and_curation.py
  is as the name suggests--a useful file for searching through the MiniF2F dataset and collecting the files we need, which was crucial for linking the lean statement and proof to its English expression.
 
