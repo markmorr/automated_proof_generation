@@ -1,0 +1,11 @@
+[' \n   ring, \n ',
+ ' \n rw [← neg_eq_neg_one_mul, ← neg_eq_neg_one_mul] at h, \n rw [← neg_eq_neg_one_mul, ← neg_eq_neg_one_mul] at h, \n rw [← neg_eq_neg_one_mul, ← neg_eq_neg_one_mul] at',
+ ' \n \n \n ',
+ ' \n \n \n ',
+ ' \n rw [← exp_neg, ← exp_neg], \n rw [← exp_add, ← exp_add], \n rw [← exp_mul, ← exp_mul], \n rw [← exp_mul, ← exp_mul], \n rw [← exp_mul, ← exp_mul], \n rw [← exp_',
+ ' \n  \n ',
+ ' \n linarith, \n ',
+ ' \n \n \n',
+ ' \n rw [← h₀], \n norm_num, \n ',
+ ' \n rw [← h₀, ← h₂], \n simp, \n ',
+ ' \n rw [← h₀, mul_comm, mul_assoc, mul_comm 50, mul_assoc, mul_comm 50, mul_assoc, mul_comm 50, mul_assoc, mul_comm 50, mul_assoc, mul_comm 50, mul_assoc, mul_comm 50, mul_assoc, mul_comm 50, mul_assoc, mul_comm 50, mul_assoc']

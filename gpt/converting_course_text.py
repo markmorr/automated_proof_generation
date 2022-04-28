@@ -16,19 +16,18 @@ import tika
 from tika import parser
 parsed = parser.from_file(EXTRACT_PATH)
 print(parsed["metadata"])
-print(parsed["content"][:100])
+print(parsed["content"][:100]) #just look at the beginning of the text for sanity checks
 doc2 = parsed["content"]
 
 #COMPARE RESULTS FROM PDF1, PDF2S
 #NEITHER WORKS GREAT ON THE TEXTBOOK PDF
 #tika is missing a java runtime??
 
-
 string_test = doc1[:100]
-print(doc1)
 string = doc1.replace('\n', '$$$')
 sentanceList = string.split('.')
 string = '.\n'.join(sentanceList)
+print(doc1)
 print(string)
 
 
